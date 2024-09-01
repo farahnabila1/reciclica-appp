@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pickup Call</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk9lhFQDaoraptFJKJdLZIZehKEABWxTuYNjolLwOcn4AGSgCbDVLs86QhPCpP1iBdN2CFT8Zu24cKp81eCEn4v1U1y8BHL6aunPrHuxl7omoOOznNOQKLAqLdzMd43Y4CD5wl50QRYGWfmjiuQUaoiUf6WGUqtQQe2Q_lrqzud7pqZKChn89EUjeQ/s1000/paket-wisata-bromo-dari-malang.jpg" />
+  <ion-card>
+    <ion-card-content>
+      <p>Address: Tugu Jogja</p>
+      <p>Complement: Depan Tugu Jogja</p>
+      <p>Neighborhood: Gelato</p>
+      <p>Zip code: 123456789</p>
+      <p>City name - Yogyakarta</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+    <ion-item lines="inset">
+      <ion-label position="floating">Notes</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-button size="full" color="success" (click)="newPickupCall()">Create Pickup Call</ion-button>
+</ion-content>

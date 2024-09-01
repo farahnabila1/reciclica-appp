@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+     <ion-menu-button>
+
+     </ion-menu-button>
+    </ion-buttons>
+    <ion-title>Bromo Tourism</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list color="success">
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzpHT8qpLsi1YCLVpVnTjbEPrcJc2CpRMUdQ&s"/>
+      </ion-avatar>
+      <ion-label>
+        <h1>Open Trip Jogja - Bromo</h1>
+        <p>Price: <span class="money">Rp 950.000</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <app-pickup-call-card status="hold" updatedAt="25/08/2024 12:00:00" createdAt="01/12/2023" notes="Liburan Murah ke Gunung Bromo">
+    <ion-card-header header>
+      <ion-card-subtitle>Last pickup call</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button color="success" fill="clear" size="full" footer (click)="goToPickupCalls()">See all...</ion-button>
+  </app-pickup-call-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success" (click)="newPickupCall()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
